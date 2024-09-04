@@ -1,0 +1,203 @@
+@font-face {
+    font-family:"RedHatText";
+    src: url("assets/fonts/RedHatText-VariableFont_wght.ttf");
+}
+body{
+    font-family:'RedHatText';
+    display: block;
+    padding: 0;
+    margin: 0;
+    background-color : hsl(13, 31%, 94%);
+}
+.root-cont{
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    width: 90%;
+    padding:30px 0px ;
+    height: 900px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  
+    background-color: hsl(20, 50%, 98%); 
+}
+.main-con{
+    margin: 0 50px;
+    padding-left: 50px;
+    margin-left: 30px;
+    width: 70%;
+}
+.main-con-boxes {
+    
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    width: 100%;
+    row-gap: 60px;
+    column-gap: 10px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    
+    height: 200px;
+    width: 100%;
+}
+img{
+    border-radius: 5px;
+    width: 95%;
+    height: 160px;
+}
+.box p{
+    margin:  0;
+    padding-left: 10px;
+    
+   
+}
+.hanel{
+    padding-top: 5px;
+    width: 100%;
+    font-size: .8rem;
+    color: rgb(90, 91, 92);
+    font-size: 10px;
+    
+   
+}
+.desc{
+    font-weight: 500;
+    width: 100%;
+}
+.price{
+    color:  hsl(12, 73%, 47%);
+}
+.add-butt{
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    border-radius: 9999px;
+    border: none;
+    height: 35px;
+    align-items: center;
+    position: relative;
+    bottom: 15px;
+    background-color: hsl(20, 50%, 98%);
+    border: 1px solid hsl(12, 20%, 44%);
+}
+.image-but{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button img{
+    width: 20px;
+    height: 20px;
+}
+.add-butt:hover{
+    
+    animation-name: but-trans;
+    animation-duration: 1s;
+    animation-play-state: running;
+    background-color: hsl(4, 28%, 81%);
+}
+@keyframes but-trans {
+    from {background-color: hsl(20, 50%, 98%);}
+    to {background-color: hsl(4, 28%, 81%);}
+  }
+.side-cont{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+    width: 30%;
+    background-color: white;
+    height: fit-content;
+    margin: 0 30px;
+   
+}
+.buy-item{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    border-bottom: 1px solid rgb(211, 211, 211);
+    height: fit-content;
+    align-items: center;
+}
+.left-part{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.left-part p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.lower-part{
+    display: flex;
+    justify-content: space-between;
+}
+.right-part button{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px rgb(90, 91, 92) solid;
+}
+.right-part img {
+    width: 15px;
+    height: 15px;
+    color: white;
+    background-color: white;
+   
+}
+.item-quant{
+    color: hsl(4, 80%, 60%);
+    font-weight: 500;
+}
+.item-name{
+    font-weight: 600;
+}
+.item-price-one{
+    font-weight: 200;
+}
+.order-final{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.order-right{
+    font-weight: 700;
+}
+.submit-button{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    border-radius: 9999px;
+    align-items: center;
+    color: white;
+    background-color: hsl(12, 85%, 46%);
+    outline: none;
+    border: none;
+
+}
+.left-part-but-image{
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.but-after-buy{
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    border-radius: 9999px;
+    border: none;
+    height: 35px;
+    align-items: center;
+    position: relative;
+    bottom: 15px;
+    background-color: hsl(14, 76%, 50%);
+    padding-left:10px ;
+}
